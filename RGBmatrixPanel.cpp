@@ -266,6 +266,7 @@ uint16_t RGBmatrixPanel::ColorHSV(
     g = (g * v1) >> 12;
     b = (b * v1) >> 12;
   }
+  
   return (r << 12) | ((r & 0x8) << 8) | // 4/4/4 -> 5/6/5
          (g <<  7) | ((g & 0xC) << 3) |
          (b <<  1) | ( b        >> 3);
